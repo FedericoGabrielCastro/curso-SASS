@@ -1,7 +1,8 @@
 // pseudo elementos ( se pueden pasar como @mixin) 
 p {
     :hover {
-        // al pasar el mouse por arriba 
+        // al pasar el mouse por arriba
+        background-color: red 
     };
     &:after{
       content: "''";  

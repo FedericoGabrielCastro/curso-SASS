@@ -1,0 +1,33 @@
+1) instale True a través de npm:
+
+# npm install sass-true
+
+------------------------------------
+2) importe True en su proyecto    #true-sass-test/sass_test.scss
+
+# @import "node_modules/sass-true/sass/true";
+# @import "../../../my-styles.scss";
+
+------------------------------------
+3)Escribe un archivo de prueba JS:   # true-sass-spec.js
+
+# var path = require('path');
+# var sassTrue = require('sass-true');
+
+# var sassFile = path.join(__dirname, 'true-sass-tests/sass_tests.scss');
+# sassTrue.runSass({file: sassFile}, {describe, it});
+
+
+------------------------------------------------------------------------------------------------------------
+Estructura: 
+
+  spec/
+    |
+    |--  true-sass-test/  (2)
+    |           |
+    |           |-- _customTest1.scss
+    |           |-- _customTest2.scss
+    |           |-- _customTest3.scss
+    |           |-- sass_test.scss (2 - imports here)
+    |
+    |-- true-sass-spec.js (3 - imports here)

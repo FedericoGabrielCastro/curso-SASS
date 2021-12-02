@@ -1,0 +1,20 @@
+// Codigo de prueba 
+@function divide-height ($height) {
+    $startingHeight: 100%;
+    @return $startingHeight / $height;
+}
+
+// test 
+
+// decribe que estas testeando 
+@include describe('The `divide-height` function') {
+    // Explica que vas a hacer 
+    @include it('returns a valid height when given valid input.') {
+      // Escribe la funcion que vas a testear
+      $test: divide-height('2');
+      // Escribe el resultado que esperas
+      $expect: 50%;
+      // Afirmar que son iguales, de lo contrario mostrar el mensaje de error
+      @include assert-equal($test, $expect, "The height is either incorrect or does not exist.");
+    }
+  }

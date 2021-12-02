@@ -1,0 +1,30 @@
+// Codigo de prueba 
+@mixin primary-header {
+    font-family: "Helvetica", Arial, sans-serif;
+    font-size: 2rem;
+    line-height: 2.5rem;
+    color: #333;
+    text-decoration: underline;
+}
+
+// test 
+
+// decribe que estas testeando 
+@include describe('The primary-header mixin') {
+    // Explica que vas a hacer 
+    @include it('outputs the properties of our primary header.') {
+      // Assert - output = para que coincida con lo que vas a escribir 
+      @include assert {
+        @include output {
+          @include primary-header(); // que vas a testear 
+        }
+        @include expect { // que esperas que traiga 
+          font-family: "Helvetica", Arial, sans-serif;
+          font-size: 2rem;
+          line-height: 2.5rem;
+          color: #333;
+          text-decoration: underline;
+        }
+      }
+    }
+  }
