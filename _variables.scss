@@ -1,0 +1,22 @@
+// Para definir las variables se utiliza el simbolo de "$" 
+$variableUno: 200px;
+$variableDos: 400px;
+$variableTres: 3s;
+$color: "#ff0";
+
+// Para saber que valor tiene cada variable se utiliza el "@" (Aparece en terminal)
+@debug $variableUno;
+@debug $variableDos;
+@debug $variableTres;
+
+// Para saber que tipo de dato es se utiliza el "@" (Aparece en terminal)
+@debug type-of($variableUno);
+@debug type-of($variableDos);
+@debug type-of($variableTres); 
+
+
+// ejemplo
+img {
+    height: $variableUno;
+    width: $variableDos;
+}

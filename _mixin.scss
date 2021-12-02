@@ -1,0 +1,20 @@
+// escribir propiedades que puede llegar a tener en comun dos o mas etiquetas para no reescribir codigo 
+@mixin fontStyle($color) {
+    color: $color;  // se pueden utilizar parametros dentro de los mixin 
+    text-transform: uppercase;
+    text-align: center;
+}
+
+// ejemplo
+h1 {
+    font-size: 40px;
+    @include fontStyle(#337); // incluir el mixin y cambiar $color por #337
+}
+h3 {
+    font-size: 30px;
+    @include fontStyle(#337999)
+}
+p {
+    font-size: 20px;
+    @include fontStyle(#337AB7) // incluir el mixin y cambiar $color por #337AB7
+} 

@@ -1,0 +1,39 @@
+// condicionales 
+
+// IF - ELSE IF - ELSE 
+$color: red;
+
+p {
+    @if ($color == azul) {
+        color: blue;
+    } @else if ($color == rojo) {
+        color: red
+    } @else {
+        color: green
+    }
+}
+
+// FOR
+@for $variable from 1 through 6 {
+    
+    // interpolations ( para todas las etiquetas de h  aumenta el font-size)
+    h#{$variable} {
+        font-size:  $variable * 2em; 
+    }
+}
+
+// WHILE 
+// mientras la variable sea mayor a 0 aumenta el width de los items en 100px * el valor de la variable
+@while $variable > 0  {
+    .item-#{$variable} {
+        width: 100px * $variable;
+    }
+};
+
+// EACH
+$list1: red green blue;
+@each $color in $list1 {
+    .#{$color} {
+        background-color: $color;
+    }
+}

@@ -1,0 +1,28 @@
+// pseudo elementos ( se pueden pasar como @mixin) 
+p {
+    :hover {
+        // al pasar el mouse por arriba 
+    };
+    &:after{
+      content: "''";  
+    }
+    &:before{
+        content: "''";  
+    }
+} 
+
+ul {
+    li {
+        color: orangered;
+        &:nth-child(n){
+            color: withe;
+        }
+        &:nth-child(n + 1) {
+            color: withe;
+        }
+        &:nth-child(n +2) {
+            color: withe;
+        }
+    }
+}
+

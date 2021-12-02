@@ -1,0 +1,7 @@
+// Este va a ser el unico archivo que se compila en css, los archivos que comienzan con _ no se compilan
+//      pero deben ser llamados aca.
+@import "variables"; // guardar propiedades en variables 
+@import "nestear"; // escribir dentro de un etiqueta de estilo varios estilos 
+@import "mixin"; // propiedades en comun con parametros
+@import "operadores"; // Calcular propiedades
+@import "listas" // lista y mapeo de propiedades 

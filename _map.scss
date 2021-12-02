@@ -1,0 +1,29 @@
+// similar a objects en JavaScript
+
+$customMap: (
+    h1: 4em,
+    h2: 3em,
+    h3: 2em,
+    h4: 1em,
+);
+
+$colores: (
+    primario: blue,
+    secundario: red
+);
+
+// en que mapa quiero buscar 
+$h1: map-get($customMap, h1);
+
+h1 {
+    font-size: $h1; // h1 toma el valor dentro del map.customMap.h1 
+};
+
+// combinar mapas
+$combinar: map-merge($customMap , $colores );
+
+// devuelve una lista de las llaves en un mapa
+$keys: map-keys($customMap )
+
+// remover
+$remover map-remove($colores , primario )

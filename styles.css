@@ -1,0 +1,125 @@
+img {
+  height: 200px;
+  width: 400px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 60px 0;
+}
+
+ul li {
+  display: inline-block;
+}
+
+ul li a {
+  color: #fff;
+  padding: 20px;
+  background-color: #337;
+}
+
+ul li a text {
+  decoration: none;
+  -webkit-transform: uppercase;
+          transform: uppercase;
+  align: center;
+}
+
+h1 {
+  font-size: 40px;
+  color: #337;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+h3 {
+  font-size: 30px;
+  color: #337999;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+p {
+  font-size: 20px;
+  color: #337AB7;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+}
+
+.main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  justify-items: center;
+}
+
+.section {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.aside {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: 10px;
+}
+
+button {
+  background-color: blue;
+  padding: 10px 20px;
+  color: #fff;
+}
+/*# sourceMappingURL=styles.css.map */

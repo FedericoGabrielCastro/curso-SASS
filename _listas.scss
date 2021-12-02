@@ -1,0 +1,21 @@
+// contruccion de listas 
+$list1: red, blue, 10px, yellow;  // se puede escribir sin comas 
+
+// las listas comienzan con el valor 1 ( 1=rojo, 2=blue, 3=10px, 4=yellow ) 
+
+// ejemplo
+$primario: nth($list1, 2); // toma primero la lista y despues el valor 
+
+button {
+    background-color: $primario;
+    padding: 10px 20px;
+    color: #fff;
+} 
+
+// combinar listas
+$list2: (red 10px) (blue 20px);
+$list3: join($list1 $list2); // combina la lista 1 y 2 y devuelve una lista nueva(lista3)
+
+// añadir valores
+$list4: append($list3, (orange, 20px,) comma); // agrega a la lista 3 los elementos en el parentesis y los separa por comas
+

@@ -1,0 +1,61 @@
+// responsive - breakpoints
+$breakpoints: (
+    "xs": 0, 
+    "sm": 480px,
+    "md": 720px,
+    "lg": 960px,
+    "xl": 1200px
+);
+
+// content se usa para no tener que rescribir la propiedad varias veces el contendio 
+@mixin xs {
+    @media (min-width: map-get($breakpoints, "xs")) {
+        @content 
+    }
+};
+@mixin sm {
+    @media (min-width: map-get($breakpoints, "sm")) {
+        @content 
+    }
+};
+@mixin md {
+    @media (min-width: map-get($breakpoints, "md")) {
+        @content 
+    }
+};
+@mixin lg {
+    @media (min-width: map-get($breakpoints, "lg")) {
+        @content 
+    }
+};
+@mixin xl {
+    @media (min-width: map-get($breakpoints, "xl")) {
+        @content 
+    }
+};
+
+// un mixin para no tener elegir segun el tamaño
+@mixin breackpoint($bp: 0) {
+    @media (min-width: $bp) {
+        @content
+    } 
+};
+
+// segun el tamaño que adopte la pantalla, lo que contenga responsive-test va a a cambiar de color 
+.resposive-test {
+    @include xs {
+        color: red;
+    }
+    @include sm {
+        color: blue;
+    }
+    @include md {
+        color: yellowgreen;
+    }
+    @include lg {
+        color: green;
+    }
+    @include xl {
+        color: orange;
+    }
+} 

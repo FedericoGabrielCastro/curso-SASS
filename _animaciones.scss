@@ -1,0 +1,19 @@
+// animaciones 
+@mixin animationName($duration) {
+    $name: inline-#{unique-id()};
+
+    @keyframes #{name} {
+        @content;
+    }
+
+    animation-name: $name;
+    animation-duration: $duration;
+    animation-iteration-count: infinite ;
+}
+
+span {
+    @include animationName(2s) {
+        from {background-color: orange }
+        to {background-color: orangered }
+    }
+}

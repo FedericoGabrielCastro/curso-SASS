@@ -1,0 +1,18 @@
+// extender las propiedades 
+
+%flex-layout {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+.navbar {
+    @extend %flex-layout; // toma las propiedades declaradas en flex-layout 
+    padding: 10px;
+    box-shadow: none
+}
+.container {
+    @extend %flex-layout;
+}

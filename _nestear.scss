@@ -1,0 +1,19 @@
+// listado de html en una solo propiedad 
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 60px 0;
+    li {
+        display: inline-block;
+        a {
+            text { // todas las propiedaes que empiecen con text- se pueden resumir 
+                decoration: none; // text-decoration
+                transform: uppercase; // text-decoration
+                align: center; // text-aling
+            }
+            color: #fff;
+            padding: 20px;
+            background-color: #337;
+        }
+    }
+}
